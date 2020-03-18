@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <button outline-color="light">
+        <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/%EC%97%B0%EC%82%B0%EC%9E%90_%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84">
+        연산자 우선순위 사이트</a></button>
+    </div>
+    <script>
+    // 1. boolean(비교 연산자)
+    // boolean은 true, false 두가지만 가지고 있다
+
+    // EX)
+    var a = 10;
+    var b = 7;
+
+    console.log(a > b); // true
+    console.log(a < b); // false
+    // 어느 쪽이 큰지
+
+    console.log(a >= b); // true
+    console.log(a <= b); // false
+    // 어느 쪽이 크거나 같은지
+
+    console.log(a === b); // false
+    // ===은 값과 type이 같은지
+    console.log(a !== b); // true
+    // !==은 값과 tpyedl 다른지 
+
+    // * !(느낌표가 들어가면 다른 값을 뜻함)
+
+    // - string(문자 비교 연산자)
+
+    a = "abc";
+    b = "bcd";
+    console.log(a<b); 
+    // string끼리 비교하면 큰 문자 string이 높음
+
+    // 2. logical(논리 연산자)
+
+    var a = true;
+    var b = false;
+
+    console.log(a&&b); // &&은 양변이 true이면 true
+    console.log(a||b); // ||은 양변이 false이면 false
+    console.log(!a);   // false
+    //true -> false, false -> true(!는 반대라고 생각하면 됨.)
+
+    // 3. ternary(조건 연산자)
+    // 조건연산자는 항이 3개인 연산자 이다.
+
+    // EX)
+    var a = 20;
+    console.log((a>50) ? "x" : "y"); 
+    // ? 앞에 있는 값이 true이면 x,
+    // ? 앞에 있는 값이 false이면 y로 표시된다.
+
+    var age = 55;
+    console.log((age<70) ? "운전할 수 있습니다." : "운전할 수 없습니다.");
+
+
+    // - 다른 타입을 불린 타입처럼
+        // 값이 없거나 '0' 이면 false, 나머지는 true
+        
+    console.log(("") ? "x" : "y");
+    // 빈 string이거나 값이 0이면 y(false)를 표시
+    // 값이 있으면 x(true) 표시
+
+    </script>
+</body>
+</html>
